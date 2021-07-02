@@ -47,7 +47,7 @@ def post_var(payload, url=ENDPOINT, device=DEVICE_LABEL, token=TOKEN):
 def main():
     # Simulates sensor values
     for i in range(10):
-        sensors["S%02i"%i] = random.random() * 100
+        sensors["S%02i"%i] = random.random() * 125
 
     # Sends data
     post_var(sensors)
